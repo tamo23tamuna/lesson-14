@@ -173,13 +173,3 @@ for(let item of numbers){
 }
 
 
-
-
-
-
-
-
-
-
-
-
