@@ -138,6 +138,42 @@ let result = fullName();
 console.log(result);
 
 
+// 9
+function max(...numbers){
+    let maxNum = 0;
+    for(let item of numbers){
+        if(item > maxNum){
+            maxNum = item;
+        }
+    }
+    return maxNum;
+}
+
+
+let result = max(13, 5, -37, 23, 21);
+console.log(result);
+
+
+// 10
+let array = [1, 2, 4, 10, 34, 5, 7, 87];
+
+for(let item of array){
+    if(item>0 && item<10){
+        console.log(item);
+    }
+}
+
+
+// 11
+let numbers =[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+for(let item of numbers){
+    if(item === 5){
+        break;
+    }
+    console.log(item);
+}
+
 
 
 
