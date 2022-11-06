@@ -72,15 +72,14 @@ for(i=0; i<array.length; i++){
 // 6
 let array = [ 2, 3, 5, 10, 25, 24, 11, 100, 6, 7, 10 ];
 
+// for loop
 // ლუწი
-//for loop ძველი ჩანაწერი
-for(let i=0; i<array.length; i++){
-    if(array[i] % 2 == 0){
-        console.log(array[i]);
+for(let i of array){
+    if(i % 2 == 0){
+        console.log(i);
     }
 }
-
-// for loop ახალი ჩანაწერი
+// კენტი
 for(let i of array){
     if(i % 2 == 0){
         console.log(i);
@@ -88,19 +87,18 @@ for(let i of array){
 }
 
 // forEach
+// ლუწი
 array.forEach(function(even){
     if(even % 2 == 0){
         console.log(even);
     }
 });
-
-// კენტი
-// for loop - ახალი ჩანაწერი
-for(let i of array){
-    if(i % 2 == 0){
-        console.log(i);
+//კენტი
+array.forEach(function(odd){
+    if(odd % 2 == 1){
+        console.log(odd);
     }
-}
+});
 
 
 // 7
