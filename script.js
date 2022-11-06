@@ -5,6 +5,7 @@ let user = {
     age: 25,
     studentstatus: "active"
 };
+
 console.log(user.studentstatus);
 
 
@@ -44,7 +45,7 @@ for(i=0; i<numbers.length; i++){
 let user = {
     name: 'giorgi',
     age:  20,
-    studentstatus: 'active'
+    studentstatus: "active"
 }
 
 if(user.age < 18 && user.studentstatus === 'active'){
@@ -53,8 +54,9 @@ if(user.age < 18 && user.studentstatus === 'active'){
     console.log('hello Levani');
 }else if(user.studentstatus === 'active' || user.age < 25){
     console.log('hello world');
+}else{
+    console.log('error');
 }
-console.log('error');
 
 
 // 5
@@ -81,7 +83,7 @@ for(let i of array){
 }
 // კენტი
 for(let i of array){
-    if(i % 2 == 0){
+    if(i % 2 == 1){
         console.log(i);
     }
 }
@@ -127,9 +129,8 @@ let user = {
 function fullName(){
     if(user.isloggedin == true){
         return user.firstname + " " + user.lastname;
-    }else{
-        return false;
     }
+    return false;
 }
 
 let result = fullName();
